@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            background-color: blueviolet;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            color: white;
+            text-align: center;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <div class="container center">
+        <div class="item">lorem</div>
+        <div class="item"> is desbolt</div>
+        <div class="item"> putim garrn arron</div>
+        <div class="item"> helei pão kiejnoa odopiao</div>
+        <div class="item"> battinha frita 1 2 3, ragnarok</div>
+        <div class="item"> era uma vez um pudim apaixonado, estava andando</div>
+        <div class="item"> na rua quando foi atropelado...puft, pudim amassado, pudim amassado</div>
+    </div>
+
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">lorem</div>
+        <div class="item"> is desbolt</div>
+        <div class="item"> putim garrn arron</div>
+        <div class="item"> helei pão kiejnoa odopiao</div>
+        <div class="item"> battinha frita 1 2 3, ragnarok</div>
+        <div class="item"> era uma vez um pudim apaixonado, estava andando</div>
+        <div class="item"> na rua quando foi atropelado...puft, pudim amassado, pudim amassado</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">lorem</div>
+        <div class="item"> is desbolt</div>
+        <div class="item"> putim garrn arron</div>
+        <div class="item"> helei pão kiejnoa odopiao</div>
+        <div class="item"> battinha frita 1 2 3, ragnarok</div>
+        <div class="item"> era uma vez um pudim apaixonado, estava andando</div>
+        <div class="item"> na rua quando foi atropelado...puft, pudim amassado, pudim amassado</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">lorem</div>
+        <div class="item"> is desbolt</div>
+        <div class="item"> putim garrn arron</div>
+        <div class="item"> helei pão kiejnoa odopiao</div>
+        <div class="item"> battinha frita 1 2 3, ragnarok</div>
+        <div class="item"> era uma vez um pudim apaixonado, estava andando</div>
+        <div class="item"> na rua quando foi atropelado...puft, pudim amassado, pudim amassado</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">lorem</div>
+        <div class="item"> is desbolt</div>
+        <div class="item"> putim garrn arron</div>
+        <div class="item"> helei pão kiejnoa odopiao</div>
+        <div class="item"> battinha frita 1 2 3, ragnarok</div>
+        <div class="item"> era uma vez um pudim apaixonado, estava andando</div>
+        <div class="item"> na rua quando foi atropelado...puft, pudim amassado, pudim amassado</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">lorem</div>
+        <div class="item"> is desbolt</div>
+        <div class="item"> putim garrn arron</div>
+        <div class="item"> helei pão kiejnoa odopiao</div>
+        <div class="item"> battinha frita 1 2 3, ragnarok</div>
+        <div class="item"> era uma vez um pudim apaixonado, estava andando</div>
+        <div class="item"> na rua quando foi atropelado...puft, pudim amassado, pudim amassado</div>
+    </div>
+</body>
+</html>
