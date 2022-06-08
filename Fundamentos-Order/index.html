@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Order</title>
+    <style>
+        .container{
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .item{
+            flex: 1;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            font-size: 24px;
+        }
+
+        .o1{
+            order: 1;
+        }
+
+        .o2{
+            order: 2;
+        }
+
+        .o3{
+            order: 3;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Row</h1>
+    <p>order 0</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <p>orders diferentes</p>
+    <div class="container">
+        <div class="item o2">1</div>
+        <div class="item o1">2</div>
+        <div class="item o2">3</div>
+        <div class="item o3">4</div>
+        <div class="item o3">5</div>
+        <div class="item o2">6</div>
+        <div class="item o1">7</div>
+    </div>
+
+    <h1>Order Column</h1>
+    <p>order 0</p>
+    <div class="container direction">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <p>orders diferentes</p>
+    <div class="container direction">
+        <div class="item o2">1</div>
+        <div class="item o1">2</div>
+        <div class="item o2">3</div>
+        <div class="item o3">4</div>
+        <div class="item o3">5</div>
+        <div class="item o2">6</div>
+        <div class="item o1">7</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex shrink</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: coral;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .shrink0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .shrink1{
+            flex-shrink: 1;
+        }
+
+        .shrink2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .shrink3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+
+        .fg0{
+            flex-grow: 0;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+
+        .fg2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>shrink</h1>
+    <p>shrink1</p>
+    <div class="container">
+        <div class="item shrink1 fg1">A</div>
+        <div class="item shrink1 fg1">B</div>
+        <div class="item shrink1 fg1">C</div>
+        <div class="item shrink1 fg1">D</div>
+        <div class="item shrink1 fg1">E</div>
+    </div>
+
+    <p>shrink alternado</p>
+    <div class="container">
+        <div class="item shrink1 fg1">A</div>
+        <div class="item shrink1 fg1">BBB</div>
+        <div class="item shrink1 fg1">C</div>
+        <div class="item shrink1 fg1">DEF</div>
+        <div class="item shrink1 fg1">GTHJ</div>
+    </div>
+
+    <p>shrink 0 and basis 100px</p>
+    <div class="container">
+        <div class="item shrink0 fg1">AAAAA</div>
+        <div class="item shrink0 fg1">B</div>
+        <div class="item shrink0 fg1">C</div>
+        <div class="item shrink0 fg1">DEF</div>
+        <div class="item shrink0 fg1">GTHJ</div>
+    </div>
+
+    <p>shrink 2</p>
+    <div class="container">
+        <div class="item shrink2 fg1">AAA</div>
+        <div class="item shrink2 fg1">B heyhehh</div>
+        <div class="item shrink2 fg1">C</div>
+        <div class="item shrink2 fg1">DEF</div>
+        <div class="item shrink2 fg1">GTHJ</div>
+    </div>
+
+    <p>shrink 3</p>
+    <div class="container">
+        <div class="item shrink2 fg1">AAAAA</div>
+        <div class="item shrink3 fg1">B</div>
+        <div class="item shrink3 fg1">C</div>
+        <div class="item shrink2 fg1">DEF</div>
+        <div class="item shrink3 fg1">GTHJ</div>
+    </div>
+</body>
+</html>

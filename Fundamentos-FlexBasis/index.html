@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos - flex basis/title>
+    <title>Fundamentos - flex basis</title>
     <style>
         .container{
-            max-width: 300px;
+            max-width: 500px;
             border: 1px solid black;
             display: flex;
         }
@@ -23,17 +23,51 @@
             flex-basis: auto;
         }
 
+        .fg0{
+            flex-grow: 0;
+        }
+
         .fg1{
             flex-grow: 1;
+        }
+
+        .fg2{
+            flex-grow: 2;
+        }
+
+        .b0{
+            flex-basis: 0;
+        }
+
+        .w100{
+            flex-basis: 50px;
         }
     </style>
 </head>
 <body>
+
+    <p>auto</p>
     <div class="container">
         <div class="item bauto fg1">A</div>
         <div class="item bauto fg1">BBB</div>
         <div class="item bauto fg1">C</div>
         <div class="item bauto fg1">DEF</div>   
+    </div>
+
+    <p>0 (zero)</p>
+    <div class="container">
+        <div class="item b0 fg1">AAAAAAAA</div>
+        <div class="item b0 fg1">BBB</div>
+        <div class="item b0 fg1">C</div>
+        <div class="item b0 fg1">DEF</div>   
+    </div>
+
+    <p>basis = width</p>
+    <div class="container">
+        <div class="item w100 fg2">A</div>
+        <div class="item w100 fg2">BBB</div>
+        <div class="item w100 fg2">C</div>
+        <div class="item w100 fg2">DEF</div>   
     </div>
 </body>
 </html>
